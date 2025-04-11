@@ -3,8 +3,9 @@
 #  <img src="images/ai.png" alt="图标" width="30" height="auto">*FUSION*:<br> Fully Integration of Vision-Language Representations for Deep Cross-Modal Understanding
 
 <p>
-    <img src="images/model_comparision.pdf" alt="Cambrian" width="500" height="auto">
+    <img src="images/model_comparision.jpg" alt="FUSION" width="500" height="auto">
 </p>
+
 
 
 <a href="https://arxiv.org/" target="_blank">
@@ -30,9 +31,9 @@
 <br>
 
 ## Release
-- [04/12/25] 🚀  We have released the training and evaluation code for FUSION. For training, we provide scripts for FUSION and FUSION-X in 3B and 8B sizes, available in the train/ folder. For evaluation, we have adapted lmms-eval and provided the corresponding model files, available in the lmms-eval/ folder. Additionally, we have implemented benchmark evaluation code in LLaVA format for quick evaluation, found in the eval/ folder.
-- [04/11/25] 🤗 We released all three stages of the FUSION and FUSION-X models in 3B and 8B sizes. Detailed information can be found in model_zoo.md.
-- [04/07/25] 🤗 We released the FUSION-Pretrain-10M and FUSION-Finetune-12M datasets. We have summarized existing benchmarks and used our dataengine to synthesize additional data. Please see here for more: https://huggingface.co/collections/starriver030515/fusion-data-67f7ccd0b087b0aa5995cbbe
+- [04/12/25] 🚀  We have released the training and evaluation code for FUSION. For training, we provide scripts for FUSION and FUSION-X in 3B and 8B sizes, available in the [train/](https://github.com/starriver030515/FUSION/tree/main/scripts/train) folder. For evaluation, we have adapted lmms-eval and provided the corresponding model files, available in the [lmms-eval/](https://github.com/starriver030515/FUSION/tree/main/scripts/lmms-eval) folder. Additionally, we have implemented benchmark evaluation code in LLaVA format for quick evaluation, found in the [eval/](https://github.com/starriver030515/FUSION/tree/main/scripts/eval) folder.
+- [04/11/25] 🤗 We released all three stages of the FUSION and FUSION-X models in 3B and 8B sizes. Detailed information can be found in the [Model Zoo](https://github.com/starriver030515/FUSION/blob/main/docs/model_zoo.md).
+- [04/07/25] 🤗 We released the FUSION-Pretrain-10M and FUSION-Finetune-12M datasets. We summarized existing benchmarks and used our dataengine to synthesize additional data. Please see here for more: https://huggingface.co/collections/starriver030515/fusion-data-67f7ccd0b087b0aa5995cbbe
 
 ## Contents
 - [Installation](#installation)
@@ -80,11 +81,11 @@ pip install -e .
 
 ## FUSION Weights
 
-Please check out our [Model Zoo](https://github.com/haotian-liu/LLaVA/blob/main/docs/MODEL_ZOO.md) for all public FUSION checkpoints, and the instructions of how to use the weights.
+Please check out our [Model Zoo](https://github.com/starriver030515/FUSION/blob/main/docs/model_zoo.md) for all public FUSION checkpoints, and the instructions of how to use the weights.
 
 ### Model Performance Comparison
 
-| Model                     | # Vis Tok. | MMB$^{EN}$  | MMB$^{CN}$ | VizWiz | POPE | MM-Vet | MME$^P$ | MME$^C$ | Seed-Image | HallB | LLaVA$^{W}$ | MMStar | MME-RW | RWQA | CV-Bench | MMVP | AI2D | MathVista | MMMU | SQA  | TextVQA | OCRBench | ChartQA | DocVQA |
+| Model                     | # Vis Tok. | MMB_EN | MMB_CN | VizWiz | POPE | MM-Vet | MME$^P$ | MME$^C$ | Seed-Image | HallB | LLaVA_W | MMStar | MME-RW | RWQA | CV-Bench | MMVP | AI2D | MathVista | MMMU | SQA  | TextVQA | OCRBench | ChartQA | DocVQA |
 | ------------------------- | :--------- | :--- | :--------- | :----- | :--- | :----- | :------ | :------ | :--------- | :---- | :---------- | :----- | :----- | :--- | :------- | :--- | :--- | :-------- | :--- | :--- | :------ | :------- | :------ | :----- |
 | **<=4B Model Comparison** |            |      |            |        |      |        |         |         |            |       |             |        |        |      |          |      |      |           |      |      |         |          |         |        |
 | **Qwen2.5VL 3B**          | -          | 79.1 | 78.1       | -   | 85.9 | 61.4   | 1592.4  | 607.5   | 74.0       | 46.6  | -           | 56.3   | 53.1   | 65.4 | -        | -    | 81.4 | 61.2      | 51.2 | 79.3 | -       | 82.8     | 84.0    | 93.93  |
@@ -106,7 +107,7 @@ Please check out our [Model Zoo](https://github.com/haotian-liu/LLaVA/blob/main/
 | **FUSION 8B (ours)**      | 780        | 80.5 | 74.9      | 59.5       | 89.3   | 60.0 | 1592.3 | 396.1   | 77.2    | 52.6       | 86.9  | 52.4        | 46.0 | 65.2 | 78.7 | 78.7  | 80.4 | 56.6 | 43.1   | 89.2 | 77.3 | 63.8 | 80.3     | 78.6 |
 | **FUSION-X 8B (ours)**    | 620        | 82.0 | 76.2       | 62.9       | 88.8   | 60.0 | 1607.5 | 337.2   | 78.2    | 51.4       | 88.0  | 52.7        | 44.7 | 66.1 | 79.2 | 79.9  | 81.4 | 59.4 | 42.2   | 90.3 | 74.7 | 66.6 | 79.8     | 77.8   |
 
-*For the full table, please refer to our FUSION paper.*
+*For the full table, please refer to our [FUSION paper](https://arxiv.org/).*
 
 ### Using FUSION
 
@@ -133,7 +134,7 @@ You can also use the `eval_model` function in `fusion/eval/run_fusion.py` to get
 ``` python
 model_path = "starriver030515/FUSION-X-Phi3.5-3B"
 prompt = "What statue is shown in the image? What name is the person?"
-image_file = "https://github.com/starriver030515/FUSION/images/example.jpg"
+image_file = "https://raw.githubusercontent.com/starriver030515/FUSION/main/images/example.png"
 
 args = type('Args', (), {
     "model_path": model_path,
@@ -228,7 +229,7 @@ Chat about images using FUSION without the need of Gradio interface.
 ```Shell
 python -m fusion.serve.cli \
     --model-path starriver030515/FUSION-X-Phi3.5-3B \
-    --image-file "https://github.com/starriver030515/FUSION/images/example.jpg" \
+    --image-file "https://raw.githubusercontent.com/starriver030515/FUSION/main/images/example.png" \
 ```
 
 <img src="images/demo_cli.gif" width="70%">
@@ -237,11 +238,10 @@ python -m fusion.serve.cli \
 
 ## FUSION Dataset
 <p align="center">
-    <img src="images/fusion_data.pdf" alt="FUSION-Data" width="900" height="auto">
+    <img src="images/fusion_data.jpg" alt="FUSION-Data" width="900" height="auto">
 </p>
 
-
-The FUSION Dataset consists of large-scale, diverse multimodal data, designed for pretraining and fine-tuning models in various tasks involving both vision and language understanding. The dataset includes two main versions:
+The FUSION Dataset consists of large-scale, diverse multimodal data, designed for pretraining and fine-tuning in various tasks involving both vision and language understanding. The dataset includes two main versions:
 
 ​	•	**FUSION-Pretrain-10M**
 
@@ -254,9 +254,9 @@ Both FUSION-Pretrain-10M and FUSION-Finetune-12M datasets are available on [FUSI
 ### Data Collection
 FUSION-Pretrain-10M is primarily built upon high-quality image-caption datasets, including LLaVA-558K, ShareCaptioner-1.2M, and PixelProse-9M. 
 
-FUSION-Finetune-12M leverages a diverse range of benchmark datasets spanning categories such as OCR, Science, and General QA. It also introduces additional datasets to improve model performance in domains such as math and visual reasoning. Some of these datasets include MMathCot and MulBerry.
+FUSION-Finetune-12M leverages a diverse range of benchmark datasets spanning categories such as OCR, Science, and General QA. It also introduces additional datasets to improve model performance in domains such as math and visual reasoning including MMathCot and MulBerry.
 
-These datasets also includes 4 million synthetic samples generated using our **Language-Driven QA Synthesis pipeline**, with the goal of improving instruction alignment and visual understanding. These 4 million synthetic samples are divided into:
+The datasets also includes 4 million synthetic samples generated using our **Language-Driven QA Synthesis pipeline**, with the goal of improving instruction alignment and visual understanding. These 4 million synthetic samples are divided into:
 
 ​	•	2M used for pretraining (PT)
 
@@ -265,8 +265,9 @@ These datasets also includes 4 million synthetic samples generated using our **L
 ### Synthesized Language-Driven QA Dataset
 
 <p align="center">
-    <img src="images/synth_method.pdf" alt="FUSION-Data" width="900" height="auto">
+    <img src="images/synth_method.jpg" alt="FUSION-Data" width="900" height="auto">
 </p>
+
 
 To increase diversity and instruction alignment, **Language-Driven QA Synthesis pipeline** is used to generate synthesized data. The process includes the following steps:
 
@@ -308,15 +309,15 @@ The synthesized instruction data covers five primary categories:
 
 #### Data Filtering and Diversity Generation
 
-To ensure the diversity of the generated data types, we generated five categories of data for pretraining and finetuning. We also designed a detailed and rigorous approach to filter the generated data, with specific details available in the FUSION Paper. However, we found that even after filtering, there is still a considerable amount of noise and low-quality data. Additionally, the number of QA types remains limited, and many other data types have yet to be explored.
+To ensure the diversity of the generated data types, we generated five categories of data for pretraining and finetuning. We also designed a detailed and rigorous approach to filter the generated data, with specific details available in our [FUSION Paper](https://arxiv.org/). However, we found that even after filtering, there is still a considerable amount of noise and low-quality data. Additionally, the number of QA types remains limited, and many other data types have yet to be explored.
 
-We provide an additional Hugging Face repository: [FUSION-Synth-4M](https://huggingface.co/datasets/starriver030515/FUSION-Synth-4M), which contains all the generated data along with detailed descriptions. Some data also includes generated Q&A pairs. On one hand, we hope the community will explore more efficient data filtering methods; on the other hand, using the descriptions, we hope users will explore a variety of new QA data types to further enrich the capabilities of MLLMs. 
+Thus, we provide an additional Hugging Face repository: [FUSION-Synth-4M](https://huggingface.co/datasets/starriver030515/FUSION-Synth-4M), which contains all the generated data along with detailed descriptions. Some data also includes generated Q&A pairs. On one hand, we hope the community will explore more efficient data filtering methods; on the other hand, using the descriptions, we hope users will explore a variety of new QA data types to further enrich the capabilities of MLLMs. 
 
 Have Fun!
 
 ### FUSION-Pretrain-10M
 
-FUSION-10M includes all of LLaVA-558K, ShareCaptioner-1.2M, and URSA-Alignment-860K, and we have filtered 5.5M high-quality image-caption pairs from PixelProse. Additionally, we have synthesized 2M specific types of image-caption pairs.
+FUSION-10M includes all of LLaVA-558K, ShareCaptioner-1.2M, and URSA-Alignment-860K, and we filtered 5.5M high-quality image-caption pairs from PixelProse. Additionally, we synthesized 2M specific types of image-caption pairs.
 
 **Data Composition for Fusion-Pretrain-10M**
 
@@ -328,7 +329,7 @@ FUSION-10M includes all of LLaVA-558K, ShareCaptioner-1.2M, and URSA-Alignment-8
 
 ### FUSION-5M-Stage1.5
 
-The Fusion-5M-Stage1.5 subset consists of 5 million samples used in the second phase of FUSION model training (Stage 1.5). This subset focuses on increasing the diversity of question types and conversational interactions. If using this part of the data alone, please download the corresponding json1.5 and image data.
+The Fusion-5M-Stage1.5 subset consists of 5 million samples used in the second phase of FUSION model training (Stage 1.5). This subset focuses on increasing the diversity of question types and conversational interactions. If using this part of the data alone, please download the corresponding [json1.5](https://huggingface.co/datasets/starriver030515/FUSION-Finetune-12M/tree/main/Stage1.5-json) and [image data](https://huggingface.co/datasets/starriver030515/FUSION-Finetune-12M/tree/main).
 
 **Data Composition for Fusion-Stage1.5**
 
@@ -343,7 +344,7 @@ The Fusion-5M-Stage1.5 subset consists of 5 million samples used in the second p
 
 ### FUSION-7M-Stage2
 
-The Fusion-7M-Stage2 subset includes 7 million samples used in the third phase of training (Stage 2). The focus here is on vision-centric instruction tuning. If using this part of the data alone, please download the corresponding json2 and image data.
+The Fusion-7M-Stage2 subset includes 7 million samples used in the third phase of training (Stage 2). The focus here is on vision-centric instruction tuning. If using this part of the data alone, please download the corresponding [json2](https://huggingface.co/datasets/starriver030515/FUSION-Finetune-12M/tree/main/Stage2-json) and [image data](https://huggingface.co/datasets/starriver030515/FUSION-Finetune-12M/tree/main).
 
 **Data Composition for Fusion-Stage2**
 
@@ -362,15 +363,15 @@ The Fusion-7M-Stage2 subset includes 7 million samples used in the third phase o
 
 For Pretrain, we recommend using the entire Fusion-Pretrain-10M dataset. 
 
-For Finetune, if sft-training in two stages, we recommend first using Fusion-Stage1.5 and then using Fusion-Stage2 for the training process. For one-stage sft-training, to achieve better performance, we recommend merging the Fusion-Stage1.5 and Fusion-Stage2 datasets by using their respective JSON files for training.
+For Finetune, if sft-training in two stages, we recommend first using Fusion-5M-Stage1.5 and then using Fusion-7M-Stage2 for the training process. For one-stage sft-training, to achieve better performance, we recommend merging the Fusion-5M-Stage1.5 and Fusion-7M-Stage2 datasets by using their respective JSON files for training.
 
 ## Train
 
 Below is the latest training configuration for FUSION.
 
-We introduce a novel three-stage training framework, distinct from traditional two-stage paradigms, ensuring comprehensive alignment and integration between visual and linguistic modalities. In each stage, we unfreeze all components to ensure comprehensive optimization and seamless integration.
+We introduce a three-stage training framework, distinct from traditional two-stage paradigms, ensuring comprehensive alignment and integration between visual and linguistic modalities. In each stage, we unfreeze all components to ensure comprehensive optimization and seamless integration.
 
-1. **Foundational Semantic Alignment**: We use FUSION-Pretrain-10M data pretrain the vision encoder  to establish precise semantic alignment between visual and textual representations.
+1. **Foundational Semantic Alignment**: We use FUSION-Pretrain-10M data to pretrain the vision encoder to establish precise semantic alignment between visual and textual representations.
 2. **Contextual Multimodal Fusion**: We use FUSION-5M-Stage1.5 to enhance the model’s adaptability in aligning vision and language representations across a broad spectrum of scenarios.
 3. **Visual Instruction Tuning**: We use FUSION-7M-Stage2 to expose the model to various visual tasks, enabling it to answer downstream vision-related questions effectively.
 
@@ -407,7 +408,7 @@ Both hyperparameters used in pretraining and finetuning are provided below.
 
 ### Foundational Semantic Alignment
 
-We use a combination of  LLaVA, ShareCaptioner, URSA-Alignment, PixelProse and our Synth data to pretrain the vision encoder  to establish precise semantic alignment between visual and textual representations. We conduct extensive studies to demonstrate the necessity of unfreezing all parameters and validating the effectiveness of the generated data.
+We use a combination of  LLaVA, ShareCaptioner, URSA-Alignment, PixelProse and our synthetic data to pretrain the vision encoder  to establish precise semantic alignment between visual and textual representations. We conduct extensive studies to demonstrate the necessity of unfreezing all parameters and validating the effectiveness of the generated data.
 
 To begin, please visit our [FUSION-Pretrain-10M](https://huggingface.co/datasets/starriver030515/FUSION-Pretrain-10M) for more details. You can download the alignment data from the following links:
 
@@ -460,7 +461,7 @@ We provide sample training scripts in:
 - `--stride_of_vision_sampler_layers`: The stride of the interaction layers module insertion inside the LLM.
 
 ## Evaluation
-We have released our evaluation code in the [`eval/`](eval/) subfolder. Please see [evaluation.md](https://github.com/haotian-liu/LLaVA/blob/main/docs/MODEL_ZOO.md) for more details.
+We have released our evaluation code in the [`eval/`](https://github.com/starriver030515/FUSION/tree/main/scripts/eval) subfolder. Please see [evaluation.md](https://github.com/starriver030515/FUSION/blob/main/docs/evaluation.md) for more details.
 
 
 ## Citation

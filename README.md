@@ -108,6 +108,7 @@ Please check out our [Model Zoo](https://github.com/starriver030515/FUSION/blob/
 | **Florence-VL 3B**        | 576        | 71.6   | 60.8   | 59.1   | 88.3 | 51.0   | 1498.7  | 403.9   | 70.6       | 58.1  | 71.1    | 44.9   | -      | 60.4 | 70.2     | 64.7 | 73.8 | 52.2      | 41.8 | 84.6 | 69.1    | 63.0     | 70.7    | -      |
 | **FUSION 3B (ours)**      | 780        | 79.5   | 71.7   | 64.6   | 88.9 | 57.2   | 1595.9  | 416.5   | 74.6       | 51.4  | 84.7    | 52.4   | 41.5   | 65.1 | 76.4     | 76.0 | 78.9 | 54.3      | 44.7 | 87.1 | 71.8    | 60.0     | 75.7    | 70.9   |
 | **FUSION-X 3B (ours)**    | 620        | 80.3   | 74.8   | 66.1   | 88.7 | 60.3   | 1582.1  | 440.0   | 75.3       | 51.9  | 85.2    | 50.9   | 41.7   | 63.7 | 78.3     | 78.1 | 79.2 | 54.9      | 44.2 | 87.3 | 73.9    | 63.7     | 75.8    | 71.1   |
+| **FUSION-L 3B (ours)**    | 308        | 77.6   | 70.8   | 65.3   | 88.3 | 56.7   | 1573.7  | 406.8   | 74.1       | 48.7  | 77.6    | 44.7   | 39.5   | 61.8 | 76.2     | 77.0 | 77.3 | 48.6      | 43.4 | 85.6 | 71.4    | 56.9     | 67.7    | 63.5   |
 | **>=7B Model Comparison** |            |        |        |        |      |        |         |         |            |       |         |        |        |      |          |      |      |           |      |      |         |          |         |        |
 | **Qwen2VL 7B**            | -          | 83.0   | 80.5   | -      | 88.4 | 62.0   | 1639.2  | 637.1   | 76.0       | 50.6  | -       | 60.7   | 57.4   | 70.1 | -        | -    | 83.0 | 58.2      | 54.1 | 85.5 | 84.3    | 86.6     | 83.0    | 94.5   |
 | **InternVL2 8B**          | -          | 81.7   | 81.2   | -      | 86.9 | 54.2   | 1639.7  | 575.3   | 75.4       | 45.2  | -       | 61.5   | 53.5   | 64.4 | -        | -    | 83.6 | 58.3      | 52.6 | 96.3 | 77.4    | 79.4     | 83.3    | 91.6   |
@@ -118,6 +119,7 @@ Please check out our [Model Zoo](https://github.com/starriver030515/FUSION/blob/
 | **Eagle 8B**              | 1024       | 75.9   | -      | -      | -    | -      | 1559.0  | -       | 76.3       | -     | -       | -      | -      | 66.5 | -        | 71.6 | 76.1 | 52.7      | 43.8 | 84.3 | 77.1    | 62.6     | 80.1    | 86.6   |
 | **FUSION 8B (ours)**      | 780        | 80.5   | 74.9   | 59.5   | 89.3 | 60.0   | 1592.3  | 396.1   | 77.2       | 52.6  | 86.9    | 52.4   | 46.0   | 65.2 | 78.7     | 78.7 | 80.4 | 56.6      | 43.1 | 89.2 | 77.3    | 63.8     | 80.3    | 78.6   |
 | **FUSION-X 8B (ours)**    | 620        | 82.0   | 76.2   | 62.9   | 88.8 | 60.0   | 1607.5  | 337.2   | 78.2       | 51.4  | 88.0    | 52.7   | 44.7   | 66.1 | 79.2     | 79.9 | 81.4 | 59.4      | 42.2 | 90.3 | 74.7    | 66.6     | 79.8    | 77.8   |
+| **FUSION-L 8B (ours)**    | 308        | 80.0   | 73.6   | 59.9   | 88.5 | 57.3   | 1601.7  | 338.9   | 75.9       | 46.7  | 82.1    | 49.3   | 42.3   | 65.1 | 78.2     | 76.7 | 79.2 | 55.2      | 41.8 | 88.3 | 72.8    | 59.5     | 73.0    | 66.0   |
 
 *For the full table, please refer to our [FUSION paper](https://arxiv.org/).*
 
@@ -290,11 +292,11 @@ To increase diversity and instruction alignment, **Language-Driven QA Synthesis 
 
       1.  **Caption Pool Collection**: A large pool of image captions is assembled from diverse datasets.
 
-      2.  **Description Expansion**: Captions are expanded into detailed descriptions using LLaMA3.1-70B.
+            2.  **Description Expansion**: Captions are expanded into detailed descriptions using LLaMA3.1-70B.
 
-      3.  **Image Generation**: The expanded descriptions are used as prompts for FLUX.1 Dev to synthesize corresponding images.
+                  3.  **Image Generation**: The expanded descriptions are used as prompts for FLUX.1 Dev to synthesize corresponding images.
 
-      4.  **QA Generation**: Descriptions and images are passed through LLaMA3.1-70B to generate high-quality Q&A pairs.
+                        4.  **QA Generation**: Descriptions and images are passed through LLaMA3.1-70B to generate high-quality Q&A pairs.
 
 #### **Types of Synthetic Alignment Datasets**
 

@@ -42,8 +42,8 @@
 
 ## Release
 
-- [04/12/25] 🚀  We have released the training and evaluation code for FUSION. For training, we provide scripts for FUSION and FUSION-X in 3B and 8B sizes, available in the [train/](https://github.com/starriver030515/FUSION/tree/main/scripts/train) folder. For evaluation, we have adapted lmms-eval and provided the corresponding model files, available in the [lmms-eval/](https://github.com/starriver030515/FUSION/tree/main/scripts/lmms-eval) folder. Additionally, we have implemented benchmark evaluation code in LLaVA format for quick evaluation, found in the [eval/](https://github.com/starriver030515/FUSION/tree/main/scripts/eval) folder.
-- [04/11/25] 🤗 We released all three stages of the FUSION and FUSION-X models in 3B and 8B sizes. Detailed information can be found in the [Model Zoo](https://github.com/starriver030515/FUSION/blob/main/docs/model_zoo.md).
+- [04/12/25] 🤗 We released all three stages of the FUSION and FUSION-X models in 3B and 8B sizes. Detailed information can be found in the [Model Zoo](https://github.com/starriver030515/FUSION/blob/main/docs/model_zoo.md).
+- [04/11/25] 🚀  We have released the training and evaluation code for FUSION. For training, we provide scripts for FUSION and FUSION-X in 3B and 8B sizes, available in the [train/](https://github.com/starriver030515/FUSION/tree/main/scripts/train) folder. For evaluation, we have adapted lmms-eval and provided the corresponding model files, available in the [lmms-eval/](https://github.com/starriver030515/FUSION/tree/main/scripts/lmms-eval) folder. Additionally, we have implemented benchmark evaluation code in LLaVA format for quick evaluation, found in the [eval/](https://github.com/starriver030515/FUSION/tree/main/scripts/eval) folder.
 - [04/07/25] 🤗 We released the FUSION-Pretrain-10M and FUSION-Finetune-12M datasets. We summarized existing benchmarks and used our dataengine to synthesize additional data. Please see [here](https://huggingface.co/collections/starriver030515/fusion-data-67f7ccd0b087b0aa5995cbbe) for more information.
 
 ## Contents

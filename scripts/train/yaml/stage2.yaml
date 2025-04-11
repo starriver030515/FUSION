@@ -1,0 +1,97 @@
+datasets:
+  - json_path: ../../playground/train/jsons/AI2D-15k.json
+    sampling_strategy: "all"
+  - json_path: ../../playground/train/jsons/DVQA-120k.json
+    sampling_strategy: "all"
+  - json_path: ../../playground/train/jsons/FinQA-5k.json
+    sampling_strategy: "all"
+  - json_path: ../../playground/train/jsons/ALLaVA_QA-700k.json
+    sampling_strategy: "all"
+  - json_path: ../../playground/train/jsons/ArxivQA-100k.json
+    sampling_strategy: "all"
+  - json_path: ../../playground/train/jsons/Chart2Text-25k.json
+    sampling_strategy: "all"
+  - json_path: ../../playground/train/jsons/ChartQA-28k.json
+    sampling_strategy: "all"
+  - json_path: ../../playground/train/jsons/DocVQA-39k.json
+    sampling_strategy: "all"
+  - json_path: ../../playground/train/jsons/CLEVR-150k.json
+    sampling_strategy: "all"
+  - json_path: ../../playground/train/jsons/DataEngine-160k.json
+    sampling_strategy: "all"
+  - json_path: ../../playground/train/jsons/GeoQA-170k.json
+    sampling_strategy: "all"
+  - json_path: ../../playground/train/jsons/GPT4V-8k.json
+    sampling_strategy: "all"
+  - json_path: ../../playground/train/jsons/LLaVA-Finetune-665k.json
+    sampling_strategy: "all"
+  - json_path: ../../playground/train/jsons/MathVision-4k.json
+    sampling_strategy: "all"
+  - json_path: ../../playground/train/jsons/PathVQA-32k.json
+    sampling_strategy: "all"
+  - json_path: ../../playground/train/jsons/PixmoDoc-250k.json
+    sampling_strategy: "all"
+  - json_path: ../../playground/train/jsons/ScienceQA-6k.json
+    sampling_strategy: "all"
+  - json_path: ../../playground/train/jsons/ScreenQA-80k.json
+    sampling_strategy: "all"
+  - json_path: ../../playground/train/jsons/ShareGPT4V-90k.json
+    sampling_strategy: "all"
+  - json_path: ../../playground/train/jsons/SynthDog-200k.json
+    sampling_strategy: "all"
+  - json_path: ../../playground/train/jsons/SynthMultiChoice-450k.json
+    sampling_strategy: "all"
+  - json_path: ../../playground/train/jsons/SynthConvLong-150k.json
+    sampling_strategy: "all"
+  - json_path: ../../playground/train/jsons/SynthConvShort-250k.json
+    sampling_strategy: "all"
+  - json_path: ../../playground/train/jsons/VizWiz-20k.json
+    sampling_strategy: "all"
+  - json_path: ../../playground/train/jsons/MMathCoT-640k.json
+    sampling_strategy: "all"
+  - json_path: ../../playground/train/jsons/OpenOrca-200k.json
+    sampling_strategy: "all"
+  - json_path: ../../playground/train/jsons/MulBerry-270k.json
+    sampling_strategy: "all"
+  - json_path: ../../playground/train/jsons/LNQA-300k.json
+    sampling_strategy: "all"
+  - json_path: ../../playground/train/jsons/TallyQA-100k.json
+    sampling_strategy: "all"
+  - json_path: ../../playground/train/jsons/DocMatix-920k.json
+    sampling_strategy: "all"
+  - json_path: ../../playground/train/jsons/ALLaVA_Cap-250k.json
+    sampling_strategy: "all"
+  - json_path: ../../playground/train/jsons/PixmoCap-150k.json
+    sampling_strategy: "all"
+  - json_path: ../../playground/train/jsons/TextVQA-23k.json
+    sampling_strategy: "all"
+  - json_path: ../../playground/train/jsons/GeomVerse-9k.json
+    sampling_strategy: "all"
+  - json_path: ../../playground/train/jsons/HiTab-2k.json
+    sampling_strategy: "all"
+  - json_path: ../../playground/train/jsons/IconQA-27k.json
+    sampling_strategy: "all"
+  - json_path: ../../playground/train/jsons/InfoVQA-2k.json
+    sampling_strategy: "all"
+  - json_path: ../../playground/train/jsons/LLaVAR-20k.json
+    sampling_strategy: "all"
+  - json_path: ../../playground/train/jsons/RAVEN-42k.json
+    sampling_strategy: "all"
+  - json_path: ../../playground/train/jsons/VisText-10k.json
+    sampling_strategy: "all"
+  - json_path: ../../playground/train/jsons/RenderedText-10k.json
+    sampling_strategy: "all"
+  - json_path: ../../playground/train/jsons/ST_VQA-17k.json
+    sampling_strategy: "all"
+  - json_path: ../../playground/train/jsons/TabMWP-23k.json
+    sampling_strategy: "all"
+  - json_path: ../../playground/train/jsons/TAT-QA-2k.json
+    sampling_strategy: "all"
+  - json_path: ../../playground/train/jsons/Visual7w-14k.json
+    sampling_strategy: "all"
+  - json_path: ../../playground/train/jsons/Visualmrc-3k.json
+    sampling_strategy: "all"
+  - json_path: ../../playground/train/jsons/WikiSQL-75k.json
+    sampling_strategy: "all"
+  - json_path: ../../playground/train/jsons/WTQ-38k.json
+    sampling_strategy: "all"

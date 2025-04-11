@@ -1,0 +1,45 @@
+datasets:
+  - json_path: ../../playground/train/jsons/ALLaVA_Cap-700k.json
+    sampling_strategy: "all"
+  - json_path: ../../playground/train/jsons/DataEngine-160k.json
+    sampling_strategy: "all"
+  - json_path: ../../playground/train/jsons/DVQA-100k.json
+    sampling_strategy: "all"
+  - json_path: ../../playground/train/jsons/GPT4Rewrote-137k.json
+    sampling_strategy: "all"
+  - json_path: ../../playground/train/jsons/LVISInstruct4V-220k.json
+    sampling_strategy: "all"
+  - json_path: ../../playground/train/jsons/MulBerry-100k.json
+    sampling_strategy: "all"
+  - json_path: ../../playground/train/jsons/PixmoAskModelAnything-70k.json
+    sampling_strategy: "all"
+  - json_path: ../../playground/train/jsons/PixmoCap-640k.json
+    sampling_strategy: "all"
+  - json_path: ../../playground/train/jsons/PixmoCapQA-160k.json
+    sampling_strategy: "all"
+  - json_path: ../../playground/train/jsons/PixmoDoc-250k.json
+    sampling_strategy: "all"
+  - json_path: ../../playground/train/jsons/QInstruct-400k.json
+    sampling_strategy: "all"
+  - json_path: ../../playground/train/jsons/SynthMultiChoice-200k.json
+    sampling_strategy: "all"
+  - json_path: ../../playground/train/jsons/SynthContrastLong-70k.json
+    sampling_strategy: "all"
+  - json_path: ../../playground/train/jsons/SynthContrastShort-70k.json
+    sampling_strategy: "all"
+  - json_path: ../../playground/train/jsons/SynthConvLong-200k.json
+    sampling_strategy: "all"
+  - json_path: ../../playground/train/jsons/SynthConvShort-200k.json
+    sampling_strategy: "all"
+  - json_path: ../../playground/train/jsons/SynthDog-300k.json
+    sampling_strategy: "all"
+  - json_path: ../../playground/train/jsons/SynthReasoning-70k.json
+    sampling_strategy: "all"
+  - json_path: ../../playground/train/jsons/SynthTextQA-100k.json
+    sampling_strategy: "all"
+  - json_path: ../../playground/train/jsons/MMathCoT-200k.json
+    sampling_strategy: "all"
+  - json_path: ../../playground/train/jsons/MathInstruct-100k.json
+    sampling_strategy: "all"
+  - json_path: ../../playground/train/jsons/OpenOrca-100k.json
+    sampling_strategy: "all"

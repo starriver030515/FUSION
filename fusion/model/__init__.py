@@ -1,0 +1,5 @@
+from .language_model.fusion_llama import FusionLlamaForCausalLM, FusionConfig
+from .language_model.fusion_mpt import FusionMptForCausalLM, FusionMptConfig
+from .language_model.fusion_mistral import FusionMistralForCausalLM, FusionMistralConfig
+from .language_model.fusion_qwen import FusionQwenForCausalLM, FusionQwenConfig
+from .language_model.fusion_phi import FusionPhiForCausalLM, FusionPhiConfig

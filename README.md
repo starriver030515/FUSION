@@ -3,14 +3,13 @@
 
 #  <img src="images/ai.png" alt="图标" width="30" height="auto">*FUSION*:<br> Fully Integration of Vision-Language Representations for Deep Cross-Modal Understanding
 
-<p>
-    <img src="images/model_comparision.jpg" alt="FUSION" width="500" height="auto">
-</p>
-
-
+</div>
 
 <a href="https://arxiv.org/" target="_blank">
     <img alt="arXiv" src="https://img.shields.io/badge/arXiv-FUSION-red?logo=arxiv" height="25" />
+</a>
+<a href="https://github.com/starriver030515/FUSION/tree/main" target="_blank">
+    <img alt="Github Star" src="https://img.shields.io/github/stars/starriver030515/FUSION?style=social" height="25" />
 </a>
 <a href="https://huggingface.co/collections/starriver030515/fusion-model-67f7cd1b9ff2f360fcfe00f1" target="_blank">
     <img alt="HF Model: FUSION" src="https://img.shields.io/badge/%F0%9F%A4%97%20_Model-FUSION-ffc107?color=ffc107&logoColor=white" height="25" />
@@ -18,6 +17,7 @@
 <a href="https://huggingface.co/collections/starriver030515/fusion-data-67f7ccd0b087b0aa5995cbbe" target="_blank">
     <img alt="HF Dataset: FUSION-12M" src="https://img.shields.io/badge/%F0%9F%A4%97%20_Data-FUSION--12M-ffc107?color=ffc107&logoColor=white" height="25" />
 </a>
+
 
 [Zheng Liu]()<sup>1,2</sup>, 
 [Mengjie Liu]()<sup>1,2</sup>,
@@ -28,7 +28,12 @@
 
 <sup>1</sup>Peking University, <sup>2</sup>Shanghai Artificial Intelligence Laboratory<br>
 
-</div>
+
+<p>
+    <img src="images/model_comparision.jpg" alt="FUSION" width="500" height="auto">
+</p>
+
+
 <br>
 
 > *With only 630 vision tokens, FUSION-X outperforms Cambrian-1 and Florence-VL, matching LLaVA-OneVision and nearly reaching the performance of top models like InternVL2 and Qwen2VL. Even with 300 vision tokens, FUSION-L retains 95% of its original performance, staying on par with Florence-VL.*

@@ -400,7 +400,7 @@ Both hyperparameters used in pretraining and finetuning are provided below.
 
 #### 1. Foundational Semantic Alignment
 
-| Model Name   |   Base LLM   |      Base Vision Encoder      | Global Batch Size | Vision Tower Learning Rate | Vision Tower Learning Rate | Epochs | Max length |
+| Model Name   |   Base LLM   |      Base Vision Encoder      | Global Batch Size | Learning rate | Vision Tower Learning Rate | Epochs | Max length |
 | ------------ | :----------: | :---------------------------: | :---------------: | :------------------------: | :------------------------: | :----: | ---------- |
 | FUSION 3B    |  Phi3.5 3B   |   siglip-so400m-patch14-384   |        256        |            2e-5            |            2e-5            |   1    | 2048       |
 | FUSION- X 3B |  Phi3.5 3B   | siglip2-giant-opt-patch16-384 |        256        |            2e-5            |            2e-5            |   1    | 2048       |
@@ -409,7 +409,7 @@ Both hyperparameters used in pretraining and finetuning are provided below.
 
 #### 2. Contextual Multimodal Fusion
 
-| Model Name   |   Base LLM   |      Base Vision Encoder      | Global Batch Size | Vision Tower Learning Rate | Vision Tower Learning Rate | Epochs | Max length |
+| Model Name   |   Base LLM   |      Base Vision Encoder      | Global Batch Size | Learning rate | Vision Tower Learning Rate | Epochs | Max length |
 | ------------ | :----------: | :---------------------------: | :---------------: | :------------------------: | :------------------------: | :----: | :--------: |
 | FUSION 3B    |  Phi3.5 3B   |   siglip-so400m-patch14-384   |        128        |            2e-5            |            2e-6            |   1    |    4096    |
 | FUSION- X 3B |  Phi3.5 3B   | siglip2-giant-opt-patch16-384 |        128        |            2e-5            |            2e-6            |   1    |    4096    |
@@ -418,7 +418,7 @@ Both hyperparameters used in pretraining and finetuning are provided below.
 
 #### 3. Visual Instruction Tuning
 
-| Model Name   |   Base LLM   |      Base Vision Encoder      | Global Batch Size | Vision Tower Learning Rate | Vision Tower Learning Rate | Epochs | Max length |
+| Model Name   |   Base LLM   |      Base Vision Encoder      | Global Batch Size | Learning rate | Vision Tower Learning Rate | Epochs | Max length |
 | ------------ | :----------: | :---------------------------: | :---------------: | :------------------------: | :------------------------: | :----: | :--------: |
 | FUSION 3B    |  Phi3.5 3B   |   siglip-so400m-patch14-384   |        128        |            1e-5            |            1e-6            |   1    |    4096    |
 | FUSION- X 3B |  Phi3.5 3B   | siglip2-giant-opt-patch16-384 |        128        |            1e-5            |            1e-6            |   1    |    4096    |

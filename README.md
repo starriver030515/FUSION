@@ -5,6 +5,7 @@
 
 </div>
 
+<div align="center">
 <a href="https://arxiv.org/" target="_blank">
     <img alt="arXiv" src="https://img.shields.io/badge/arXiv-FUSION-red?logo=arxiv" height="25" />
 </a>
@@ -37,7 +38,7 @@
 <br>
 
 > *With only 630 vision tokens, FUSION-X outperforms Cambrian-1 and Florence-VL, matching LLaVA-OneVision and nearly reaching the performance of top models like InternVL2 and Qwen2VL. Even with 300 vision tokens, FUSION-L retains 95% of its original performance, staying on par with Florence-VL.*
-
+</div>
 ## Release
 
 - [04/12/25] 🚀  We have released the training and evaluation code for FUSION. For training, we provide scripts for FUSION and FUSION-X in 3B and 8B sizes, available in the [train/](https://github.com/starriver030515/FUSION/tree/main/scripts/train) folder. For evaluation, we have adapted lmms-eval and provided the corresponding model files, available in the [lmms-eval/](https://github.com/starriver030515/FUSION/tree/main/scripts/lmms-eval) folder. Additionally, we have implemented benchmark evaluation code in LLaVA format for quick evaluation, found in the [eval/](https://github.com/starriver030515/FUSION/tree/main/scripts/eval) folder.

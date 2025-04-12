@@ -122,7 +122,7 @@ Please check out our [Model Zoo](https://github.com/starriver030515/FUSION/blob/
 | **FUSION-X 8B (ours)**    | 620        | 82.0   | 76.2   | 62.9   | 88.8 | 60.0   | 1607.5  | 337.2   | 78.2       | 51.4  | 88.0    | 52.7   | 44.7   | 66.1 | 79.2     | 79.9 | 81.4 | 59.4      | 42.2 | 90.3 | 74.7    | 66.6     | 79.8    | 77.8   |
 | **FUSION-L 8B (ours)**    | 308        | 80.0   | 73.6   | 59.9   | 88.5 | 57.3   | 1601.7  | 338.9   | 75.9       | 46.7  | 82.1    | 49.3   | 42.3   | 65.1 | 78.2     | 76.7 | 79.2 | 55.2      | 41.8 | 88.3 | 72.8    | 59.5     | 73.0    | 66.0   |
 
-*For the full table, please refer to our [FUSION paper](https://arxiv.org/).*
+> *Despite using only 630 vision tokens, FUSION-X 3B achieved the highest score on MMBench among models under 4B size, even outperforming Qwen2.5VL!*
 
 ### Using FUSION
 

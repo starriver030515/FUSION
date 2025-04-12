@@ -325,10 +325,12 @@ The synthesized instruction data covers five primary categories:
    •   **SynthContrastShort QA & SynthContrastLong QA**: Dialogues comparing two similar images to train the model to observe subtle visual differences.
 
    •   **SynthReasoning QA**: Single-turn visual reasoning questions that require inference from visual inputs.
+   
+   •   **SynthText QA**: Multi-turn dialogues that identify and describe visible text in the image.
 
 #### Data Filtering and Diversity Generation
 
-To ensure the diversity of the generated data types, we generated five categories of data for pretraining and finetuning. We also designed a detailed and rigorous approach to filter the generated data, with specific details available in our [FUSION Paper](https://arxiv.org/). However, we found that even after filtering, there is still a considerable amount of noise and low-quality data. Additionally, the number of QA types remains limited, and many other data types have yet to be explored.
+To ensure the diversity of the generated data types, we generated several categories of data for pretraining and finetuning. We also designed a detailed and rigorous approach to filter the generated data, with specific details available in our [FUSION Paper](https://arxiv.org/). However, we found that even after filtering, there is still a considerable amount of noise and low-quality data. Additionally, the number of QA types remains limited, and many other data types have yet to be explored.
 
 Thus, we provide an additional Hugging Face repository: [FUSION-Synth-4M](https://huggingface.co/datasets/starriver030515/FUSION-Synth-4M), which contains all the generated data along with detailed descriptions. Some data also includes generated Q&A pairs. On one hand, we hope the community will explore more efficient data filtering methods; on the other hand, using the descriptions, we hope users will explore a variety of new QA data types to further enrich the capabilities of MLLMs. 
 

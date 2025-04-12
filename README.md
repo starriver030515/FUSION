@@ -290,13 +290,13 @@ The datasets also includes 4 million synthetic samples generated using our **Lan
 
 To increase diversity and instruction alignment, **Language-Driven QA Synthesis pipeline** is used to generate synthesized data. The process includes the following steps:
 
-      1.  **Caption Pool Collection**: A large pool of image captions is assembled from diverse datasets.
+1. **Caption Pool Collection**: A large pool of image captions is assembled from diverse datasets.
 
-            2.  **Description Expansion**: Captions are expanded into detailed descriptions using LLaMA3.1-70B.
+2.  **Description Expansion**: Captions are expanded into detailed descriptions using LLaMA3.1-70B.
 
-                  3.  **Image Generation**: The expanded descriptions are used as prompts for FLUX.1 Dev to synthesize corresponding images.
+3.  **Image Generation**: The expanded descriptions are used as prompts for FLUX.1 Dev to synthesize corresponding images.
 
-                        4.  **QA Generation**: Descriptions and images are passed through LLaMA3.1-70B to generate high-quality Q&A pairs.
+4.  **QA Generation**: Descriptions and images are passed through LLaMA3.1-70B to generate high-quality Q&A pairs.
 
 #### **Types of Synthetic Alignment Datasets**
 
@@ -314,7 +314,7 @@ The synthesized alignment data covers five primary categories:
 
 #### Types of Synthetic Instruction Datasets
 
-The synthesized instruction data covers five primary categories:
+The synthesized instruction data covers six primary categories:
 
    •   **SynthMultiChoice QA**: Multi-turn dialogues with multiple-choice questions to teach the model to distinguish closely related options.
 

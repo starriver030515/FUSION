@@ -9,7 +9,7 @@ SPLIT="mmbench_dev_20230712"
 for IDX in $(seq 0 $((CHUNKS-1))); do
     CUDA_VISIBLE_DEVICES=${GPULIST[$IDX]} python -m fusion.eval.model_vqa \
         --model-path $SCRIPT_DIR/../../playground/training/training_dirs/$FINETUNE_NAME \
-        --question-file $SCRIPT_DIR/../../playground/eval/mm-vet/llava-mm-vet.jsonl \
+        --question-file $SCRIPT_DIR/../../playground/eval/mm-vet/llava-mm-vet-cot.jsonl \
         --image-folder $SCRIPT_DIR/../../playground/eval/mm-vet/images \
         --answers-file $SCRIPT_DIR/../../playground/eval/mm-vet/answers/${FINETUNE_NAME}/${CHUNKS}_${IDX}.jsonl \
         --num-chunks $CHUNKS \

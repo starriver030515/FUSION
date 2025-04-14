@@ -98,7 +98,7 @@ Please check out our [Model Zoo](https://github.com/starriver030515/FUSION/blob/
 
 ### Model Performance Comparison
 
-| Model                     | # Vis Tok. | MMB_EN | MMB_CN | VizWiz | POPE | MM-Vet | MME$^P$ | MME$^C$ | Seed-Image | HallB | LLaVA_W | MMStar | MME-RW | RWQA | CV-Bench | MMVP | AI2D | MathVista | MMMU | SQA  | TextVQA | OCRBench | ChartQA | DocVQA |
+| Model                     | # Vis Tok. | MMB_EN | MMB_CN | VizWiz | POPE | MM-Vet | MME_P | MME_C | Seed-Image | HallB | LLaVA_W | MMStar | MME-RW | RWQA | CV-Bench | MMVP | AI2D | MathVista | MMMU | SQA  | TextVQA | OCRBench | ChartQA | DocVQA |
 | ------------------------- | :--------- | :----- | :----- | :----- | :--- | :----- | :------ | :------ | :--------- | :---- | :------ | :----- | :----- | :--- | :------- | :--- | :--- | :-------- | :--- | :--- | :------ | :------- | :------ | :----- |
 | **<=4B Model Comparison** |            |        |        |        |      |        |         |         |            |       |         |        |        |      |          |      |      |           |      |      |         |          |         |        |
 | **Qwen2.5VL 3B**          | -          | 79.1   | 78.1   | -      | 85.9 | 61.4   | 1592.4  | 607.5   | 74.0       | 46.6  | -       | 56.3   | 53.1   | 65.4 | -        | -    | 81.4 | 61.2      | 51.2 | 79.3 | -       | 82.8     | 84.0    | 93.93  |
@@ -388,6 +388,8 @@ For Pretrain, we recommend using the entire Fusion-Pretrain-10M dataset.
 For Finetune, if sft-training in two stages, we recommend first using Fusion-5M-Stage1.5 and then using Fusion-7M-Stage2 for the training process. For one-stage sft-training, to achieve better performance, we recommend merging the Fusion-5M-Stage1.5 and Fusion-7M-Stage2 datasets by using their respective JSON files for training.
 
 ## Train
+
+Before training, you need to organize the training data according to [data.md](https://github.com/starriver030515/FUSION/blob/main/docs/data.md).
 
 Below is the latest training configuration for FUSION.
 

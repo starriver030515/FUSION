@@ -206,6 +206,12 @@ class FusionMetaForCausalLM(ABC):
         image_features, vision_embeddings, vision_features = self.encode_images(split_images, instruct_embeddings, instruct_mask)
         image_features, instruct_features = image_features[...,:height*width,:], image_features[...,height*width:,:]
 
+        # If you want to use FUSION-L, you can uncomment the following lines.
+        # image_features = image_features.view(image_features.shape[0], height, width, -1)
+        # image_features = image_features.permute(0, 3, 1, 2)
+        # image_features = nn.functional.interpolate(image_features, size=(12, 12), mode='bilinear', align_corners=False)
+        # image_features = image_features.permute(0, 2, 3, 1).flatten(1, 2)
+
         # we encode the global images with no instructs, which will be used as query in decoder's interaction layer.
         global_image_features = self.encode_global_images(global_images)
 

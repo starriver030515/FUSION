@@ -11,7 +11,7 @@ CONFIG=$SCRIPT_DIR/../../fusion/eval/MMMU/eval/configs/llava1.5.yaml
 
 for IDX in $(seq 0 $((CHUNKS-1))); do
     CUDA_VISIBLE_DEVICES=${GPULIST[$IDX]} python $SCRIPT_DIR/../../fusion/eval/MMMU/eval/run_fusion.py \
-        --data_path $SCRIPT_DIR/../../playground/eval/MMMU \
+        --data_path $SCRIPT_DIR/../../playground/eval/MMMU/images \
         --config_path $CONFIG \
         --model_path $SCRIPT_DIR/../../playground/training/training_dirs/$FINETUNE_NAME \
         --answers-file $SCRIPT_DIR/../../playground/eval/MMMU/answers/$CKPT/${CHUNKS}_${IDX}.jsonl \

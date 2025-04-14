@@ -148,6 +148,7 @@ class FusionPhiModel(FusionMetaModel, Phi3Model):
                     V = L * query_len
                     assert V == vision_pos.size(1)
 
+                    # support beam search
                     # instruct_pos = instruct_pos.expand(B, -1)
                     # vision_pos = vision_pos.expand(B, -1)
                     # global_ctx = global_ctx.expand(B, -1, -1)

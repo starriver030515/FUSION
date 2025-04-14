@@ -491,7 +491,7 @@ We have released our evaluation code in the [`eval/`](https://github.com/starriv
 
 ## Citation
 
-If you find Cambrian useful for your research and applications, please cite using this BibTeX:
+If you find FUSION useful for your research and applications, please cite using this BibTeX:
 
 ```bibtex
 TBD~
@@ -500,11 +500,11 @@ TBD~
 ## Acknowledgement
 
 - [LLaVA](https://github.com/haotian-liu/LLaVA): We start from codebase from the amazing LLaVA
-- [Cambrian-1](https://github.com/cambrian-mllm/cambrian/tree/539ffc3254bba004e5d012b65c0ad6cb308897c5): We thank Cambrian for its codebase and the awesome Cambrian-1 7M data.
+- [Cambrian-1](https://github.com/cambrian-mllm/cambrian/tree/539ffc3254bba004e5d012b65c0ad6cb308897c5): We thank Cambrian-1 for its codebase and the awesome Cambrian-1 7M data.
 - [LLaMA](https://www.bing.com/search?q=LLama3.1+meta&form=APMCS1&PC=APMC): We thank LLaMA for continuing contribution to the open-source community and providing LLaMA-3.1 checkpoints.
 - [Phi](https://techcommunity.microsoft.com/blog/azure-ai-services-blog/discover-the-new-multi-lingual-high-quality-phi-3-5-slms/4225280): We thank Phi for continuing contribution to the open-source community and providing Phi3.5 checkpoints.
 
 ## License
 
-[![Code License](https://img.shields.io/badge/Code%20License-Apache_2.0-green.svg)](https://github.com/cambrian-mllm/cambrian/blob/main/LICENSE)<br>
+[![Code License](https://img.shields.io/badge/Code%20License-Apache_2.0-green.svg)]<br>
 **Usage and License Notices**: This project utilizes certain datasets and checkpoints that are subject to their respective original licenses. Users must comply with all terms and conditions of these original licenses, including but not limited to the [OpenAI Terms of Use](https://openai.com/policies/terms-of-use) for the dataset and the specific licenses for base language models for checkpoints trained using the dataset (e.g. [Llama community license](https://ai.meta.com/llama/license/) for LLaMA-3.1, and Phi3.5). This project does not impose any additional constraints beyond those stipulated in the original licenses. Furthermore, users are reminded to ensure that their use of the dataset and checkpoints is in compliance with all applicable laws and regulations.

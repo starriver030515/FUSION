@@ -19,10 +19,17 @@ def parse_multi_choice_response(response, all_choices, index2ans):
     index_ans = True
     ans_with_brack = False
     candidates = []
+
     for choice in all_choices:  # e.g., (A) (B) (C) (D)
-        if f'({choice})' in response:
+        if f'The final answer is:\n{choice}' in response:
             candidates.append(choice)
             ans_with_brack = True
+            
+    if len(candidates) == 0:
+        for choice in all_choices:  # e.g., (A) (B) (C) (D)
+            if f'({choice})' in response:
+                candidates.append(choice)
+                ans_with_brack = True
 
     if len(candidates) == 0:
         for choice in all_choices: # e.g., A B C D

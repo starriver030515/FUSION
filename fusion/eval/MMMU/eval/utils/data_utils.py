@@ -143,7 +143,7 @@ def construct_prompt(sample, config):
         index2ans = {}
         for option in options:
             prediction_range.append(start_chr)
-            example += f"({start_chr}) {option}\n"
+            example += f"{start_chr}. {option}\n"
             index2ans[start_chr] = option
             start_chr = chr(ord(start_chr) + 1)
         empty_prompt_sample_structure = config['multi_choice_example_format']
@@ -157,7 +157,6 @@ def construct_prompt(sample, config):
             res_dict['final_input_prompt'] = config['task_instructions'].strip() + '\n\n' + empty_prompt
         else:
             res_dict['final_input_prompt'] = empty_prompt
-
         res_dict['gt_content'] = options[ord(sample['answer'].upper()) - ord('A')]
     else:
         empty_prompt_sample_structure = config['short_ans_example_format']

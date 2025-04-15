@@ -6,7 +6,7 @@
 </div>
 
 <div align="center">
-<a href="https://arxiv.org/" target="_blank">
+<a href="https://arxiv.org/abs/2504.09925" target="_blank">
     <img alt="arXiv" src="https://img.shields.io/badge/arXiv-FUSION-red?logo=arxiv" height="25" />
 </a>
 <a href="https://github.com/starriver030515/FUSION/tree/main" target="_blank">
@@ -331,7 +331,7 @@ The synthesized instruction data covers six primary categories:
 
 #### Data Filtering and Diversity Generation
 
-To ensure the diversity of the generated data types, we generated several categories of data for pretraining and finetuning. We also designed a detailed and rigorous approach to filter the generated data, with specific details available in our [FUSION Paper](https://arxiv.org/). However, we found that even after filtering, there is still a considerable amount of noise and low-quality data. Additionally, the number of QA types remains limited, and many other data types have yet to be explored.
+To ensure the diversity of the generated data types, we generated several categories of data for pretraining and finetuning. We also designed a detailed and rigorous approach to filter the generated data, with specific details available in our [FUSION Paper](https://arxiv.org/abs/2504.09925). However, we found that even after filtering, there is still a considerable amount of noise and low-quality data. Additionally, the number of QA types remains limited, and many other data types have yet to be explored.
 
 Thus, we provide an additional Hugging Face repository: [FUSION-Synth-4M](https://huggingface.co/datasets/starriver030515/FUSION-Synth-4M), which contains all the generated data along with detailed descriptions. Some data also includes generated Q&A pairs. On one hand, we hope the community will explore more efficient data filtering methods; on the other hand, using the descriptions, we hope users will explore a variety of new QA data types to further enrich the capabilities of MLLMs. 
 
@@ -494,7 +494,15 @@ We have released our evaluation code in the [`eval/`](https://github.com/starriv
 If you find FUSION useful for your research and applications, please cite using this BibTeX:
 
 ```bibtex
-TBD~
+@misc{liu2025fusionfullyintegrationvisionlanguage,
+      title={FUSION: Fully Integration of Vision-Language Representations for Deep Cross-Modal Understanding}, 
+      author={Zheng Liu and Mengjie Liu and Jingzhou Chen and Jingwei Xu and Bin Cui and Conghui He and Wentao Zhang},
+      year={2025},
+      eprint={2504.09925},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2504.09925}, 
+}
 ```
 
 ## Acknowledgement
